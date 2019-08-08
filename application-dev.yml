@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/sell?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    service-url:
+      DefaultZone: http://${eureka.instance.hostname}:8761/eureka
+env:
+  dev
